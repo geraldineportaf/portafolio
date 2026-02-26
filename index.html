@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geraldine - Portafolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0f0c29;
+    background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+    color:white;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:3.5rem;
+    font-weight:800;
+    background:linear-gradient(90deg,#ff9a9e,#fad0c4);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+header p{
+    margin-top:15px;
+    font-size:1.2rem;
+    opacity:0.9;
+}
+
+button{
+    margin-top:30px;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(90deg,#ff9a9e,#fecfef);
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    font-size:2.2rem;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    background:rgba(255,255,255,0.15);
+    transform:translateY(-5px);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:scale(1.03);
+    background:rgba(255,255,255,0.15);
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#14142b;
+    font-size:0.9rem;
+    opacity:0.8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Geraldine</h1>
+    <p>Desarrolladora Minecraft • Programadora • Creadora de Bots</p>
+    <button onclick="alert('Gracias por visitar mi portafolio 💖')">Contáctame</button>
+</header>
+
+<section>
+    <h2 class="section-title">Sobre Mí</h2>
+    <div class="about">
+        <p>
+            Soy desarrolladora especializada en Minecraft con más de <strong>6 años de experiencia</strong> 
+            creando servidores profesionales, networks avanzadas y sistemas personalizados.
+        </p>
+        <br>
+        <p>
+            Me apasiona la programación y el diseño de sistemas eficientes. He trabajado en la 
+            creación de plugins personalizados en Java, bots automatizados para Discord, 
+            sistemas de economía, eventos automáticos y configuraciones avanzadas para servidores.
+        </p>
+        <br>
+        <p>
+            También desarrollo páginas web modernas, paneles administrativos y herramientas 
+            conectadas a bases de datos MySQL. Mi enfoque siempre es crear proyectos 
+            optimizados, seguros y visualmente atractivos.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Lenguajes & Tecnologías</h2>
+    <div class="skills">
+        <div class="skill-card">Java</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">PHP</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">YAML</div>
+        <div class="skill-card">Lua</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">Linux</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Proyectos Destacados</h2>
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Plugins Personalizados</h3>
+            <p>
+                Desarrollo de plugins avanzados para Paper/Spigot. 
+                Sistemas de ranks, economías, scoreboards dinámicos y eventos automáticos.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Bots Automatizados</h3>
+            <p>
+                Bots para Discord con sistemas de tickets, verificación,
+                sincronización con Minecraft y paneles administrativos.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Redes Minecraft</h3>
+            <p>
+                Configuración de networks con Velocity/BungeeCord,
+                integración con MySQL y optimización de rendimiento.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Desarrollo Web</h3>
+            <p>
+                Landing pages, tiendas Tebex y paneles conectados a bases de datos.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Experiencia Profesional</h2>
+    <div class="about">
+        ✔ 6 años jugando y desarrollando en Minecraft  
+        ✔ Creación de networks completas  
+        ✔ Configuración avanzada de plugins premium  
+        ✔ Automatización de procesos  
+        ✔ Optimización de servidores VPS  
+        ✔ Integración de APIs externas  
+    </div>
+</section>
+
+<footer>
+    © 2026 Geraldine - Portafolio Profesional  
+    Desarrollo Minecraft & Software
+</footer>
+
+</body>
+</html>
